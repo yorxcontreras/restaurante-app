@@ -11,7 +11,7 @@ public class ReservaController {
 
     public ReservaController() {
         this.horarios = new ArrayList<>();
-        // Inicializa os horários disponíveis (assumindo que o restaurante abre às 10 horas e fecha às 21 horas)
+        // Inicializa os horários disponíveis (Considerando que o restaurante abre 10h e fecha 21h)
         for (int i = 10; i <= 21; i++) {
             horarios.add(new Horario(i));
         }
@@ -37,3 +37,4 @@ public class ReservaController {
         }
     }
 }
+//Achar objetivo do objeto reserva!
