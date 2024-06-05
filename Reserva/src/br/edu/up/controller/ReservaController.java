@@ -1,5 +1,6 @@
 package br.edu.up.controller;
 
+import br.edu.up.daos.GerenciadorDeArquivos;
 import br.edu.up.model.Horario;
 
 import java.util.ArrayList;
@@ -9,12 +10,10 @@ public class ReservaController {
     private List<Horario> horarios;
 
     public ReservaController() {
-        this.horarios = new ArrayList<>();
-        // Inicializa os horários disponíveis (Considerando que o restaurante abre 10h e fecha 21h)
-        for (int i = 10; i <= 21; i++) {
-            horarios.add(new Horario(i));
+        GerenciadorDeArquivos gerenciador = new GerenciadorDeArquivos();
+        this.horarios = gerenciador.carregar();
+
         }
-    }
 
     public List<Horario> getHorariosDisponiveis() {
         List<Horario> horariosDisponiveis = new ArrayList<>();
@@ -34,6 +33,8 @@ public class ReservaController {
             System.out.println("Desculpe, este horário já está reservado. Por favor, escolha outro horário.");
         }
     }
-}
 
-//Reset commit
+    public List<Horario> getHorarios() {
+        return horarios;
+    }
+}
