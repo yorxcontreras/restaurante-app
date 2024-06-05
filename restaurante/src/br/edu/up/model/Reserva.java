@@ -13,4 +13,28 @@ public class Reserva {
         this.numeroPessoas = numeroPessoas;
     }
 
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
+    }
+
+    public String getNomeCliente() {
+        return nomeCliente;
+    }
+
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
+    }
+
+    public int getNumeroPessoas() {
+        return numeroPessoas;
+    }
+
+    public void setNumeroPessoas(int numeroPessoas) {
+        this.numeroPessoas = numeroPessoas;
+    }
+
 }

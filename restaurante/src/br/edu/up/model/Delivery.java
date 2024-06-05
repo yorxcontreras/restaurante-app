@@ -8,5 +8,24 @@ public class Delivery {
         this.enderecoEntrega = enderecoEntrega;
         this.pedido = pedido;
     }
+    public Delivery(String enderecoEntrega){
+        this.enderecoEntrega = enderecoEntrega;
+    }
+
+    public String getEnderecoEntrega() {
+        return enderecoEntrega;
+    }
+
+    public void setEnderecoEntrega(String enderecoEntrega) {
+        this.enderecoEntrega = enderecoEntrega;
+    }
+
+    public Pedido getPedido() {
+        return pedido;
+    }
+
+    public void setPedido(Pedido pedido) {
+        this.pedido = pedido;
+    }
 
 }
