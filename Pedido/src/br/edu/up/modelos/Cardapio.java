@@ -10,7 +10,8 @@ public class Cardapio {
     private int comanda;
 
     public Cardapio(String bebidas,String entrada,float conta, String cliente, String pratos, int comanda) {
-        
+    }    
+    
         public String getBebidas() {
             return bebidas;
         }
@@ -59,4 +60,3 @@ public class Cardapio {
             this.comanda = comanda;
         }	
     }
-}
