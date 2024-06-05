@@ -1,6 +1,7 @@
 package br.edu.up.view;
 
 import br.edu.up.controller.ReservaController;
+import br.edu.up.daos.GerenciadorDeArquivos;
 import br.edu.up.model.Horario;
 
 import java.util.List;
@@ -34,6 +35,9 @@ public class SistemaReservaRestaurante {
                     verificarDisponibilidade();
                     break;
                 case 3:
+                    GerenciadorDeArquivos gerenciador = new GerenciadorDeArquivos();
+                    List<Horario> horarios  = reservaController.getHorarios();
+                    gerenciador.salvar(horarios);
                     System.out.println("Obrigado por usar o sistema de reserva do restaurante!");
                     return;
                 default:
@@ -88,4 +92,4 @@ public class SistemaReservaRestaurante {
         }
     }
 }
-//Reset commit
+     
