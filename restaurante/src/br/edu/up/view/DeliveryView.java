@@ -11,7 +11,8 @@ public class DeliveryView {
 
     public void adicionarDelivery() {
         System.out.println("Digite o endereço de entrega:");
-        String enderecoEntrega = scanner.nextLine();
+        
+        Delivery delivery = new Delivery(scanner.nextLine());
 
         // Lógica para criar um Pedido (ou selecionar um existente) e criar o Delivery
         // Exemplo: Pedido pedido = ...; Delivery delivery = new Delivery(enderecoEntrega, pedido);
