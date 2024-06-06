@@ -9,12 +9,12 @@ import br.edu.up.controller.ReservaController;
 import java.util.Scanner;
 
 public class MainView {
-    private Scanner scanner = new Scanner(System.in);
-    private ClienteController clienteController = new ClienteController();
-    private DeliveryController deliveryController = new DeliveryController();
-    private PedidoController pedidoController = new PedidoController();
-    private ProdutoController produtoController = new ProdutoController();
-    private ReservaController reservaController = new ReservaController();
+    public Scanner scanner = new Scanner(System.in);
+    public ClienteController clienteController = new ClienteController();
+    public DeliveryController deliveryController = new DeliveryController();
+    public PedidoController pedidoController = new PedidoController();
+    public ProdutoController produtoController = new ProdutoController();
+    public ReservaController reservaController = new ReservaController();
 
     public void exibirMenu() {
         int opcao;

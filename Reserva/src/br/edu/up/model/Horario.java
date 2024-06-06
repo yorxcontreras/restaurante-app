@@ -1,6 +1,6 @@
 package br.edu.up.model;
 
-public class Horario {
+public abstract class Horario {
     private int hora;
     private boolean disponivel;
 
@@ -20,5 +20,6 @@ public class Horario {
     public void reservar() {
         this.disponivel = false;
     }
+    public abstract String toCSV();
 }
 //commit fix
