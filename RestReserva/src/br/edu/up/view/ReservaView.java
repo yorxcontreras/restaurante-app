@@ -35,19 +35,19 @@ public class ReservaView {
     }
 
     public Reserva getReservaDetails() {
-        scanner.nextLine();  // Limpa o buffer do scanner
+        scanner.nextLine(); 
         System.out.println("Digite o nome do cliente:");
         String nomeCliente = scanner.nextLine();
         System.out.println("Digite a data (DD/MM/AAAA):");
         String data = scanner.nextLine();
         System.out.println("Digite o número de pessoas:");
         int numeroPessoas = scanner.nextInt();
-        scanner.nextLine();  // Limpa o buffer do scanner
+        scanner.nextLine();
         return new Reserva(nomeCliente, data, numeroPessoas);
     }
 
     public String getNomeCliente() {
-        scanner.nextLine();  // Limpa o buffer do scanner
+        scanner.nextLine();
         System.out.println("Digite o nome do cliente para cancelar a reserva:");
         return scanner.nextLine();
     }
